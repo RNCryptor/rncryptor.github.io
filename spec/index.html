@@ -57,7 +57,7 @@
   
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
-  <li><a href="/archives">Archives</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
   <li><a href="/spec">Specification</a></li>
 </ul>
 
@@ -89,14 +89,38 @@
 <aside class="sidebar">
   
     <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-  </ul>
+  <p>RNCryptor is a data format specificiation for AES encryption, with AES-256, random-salted PBKDF2, AES-CBC, random IV, and HMAC. It has implementations in several languages.</p>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/RNCryptor">@RNCryptor</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
 
-
+        github.showRepos({
+            user: 'RNCryptor',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos',
+            blacklist: 'rncryptor.github.io'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
 
 
   

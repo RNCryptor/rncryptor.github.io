@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - RNCryptor</title>
+  <title>New RNCryptor Site - RNCryptor</title>
   <meta name="author" content="Rob Napier">
 
   
-  <meta name="description" content=" Blog Archive Recent Posts ">
+  <meta name="description" content="RNCryptor has a new home of sorts. It now lives it its own organization, and I&rsquo;ve split all the implementations into their own repositories. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RNCryptor.github.io/archives">
+  <link rel="canonical" href="http://RNCryptor.github.io/blog/2014/01/14/new-rncryptor-site">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RNCryptor" type="application/atom+xml">
@@ -57,7 +57,7 @@
   
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
-  <li><a href="/archives">Archives</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
   <li><a href="/spec">Specification</a></li>
 </ul>
 
@@ -65,18 +65,76 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">New RNCryptor Site</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-14T15:28:53-05:00" pubdate data-updated="true">Jan 14<span>th</span>, 2014</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
+
+<div class="entry-content"><p>RNCryptor has a new home of sorts. It now lives it its own organization, and I&rsquo;ve split all the implementations into their own repositories. There&rsquo;s a new <a href="https://github.com/RNCryptor/RNCryptor-Spec">RNCryptor-Spec</a> repository to track the specification itself. And there&rsquo;s this nice, new website to make things a little easier to find. I hope it helps you find what you need. I expect a lot of work on RNCryptor in 2014.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Rob Napier</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-14T15:28:53-05:00" pubdate data-updated="true">Jan 14<span>th</span>, 2014</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RNCryptor.github.io/blog/2014/01/14/new-rncryptor-site/" data-via="cocoaphony" data-counturl="http://RNCryptor.github.io/blog/2014/01/14/new-rncryptor-site/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
@@ -84,14 +142,38 @@
 <aside class="sidebar">
   
     <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-  </ul>
+  <p>RNCryptor is a data format specificiation for AES encryption, with AES-256, random-salted PBKDF2, AES-CBC, random IV, and HMAC. It has implementations in several languages.</p>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/RNCryptor">@RNCryptor</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
 
-
+        github.showRepos({
+            user: 'RNCryptor',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos',
+            blacklist: 'rncryptor.github.io'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
 
 
   

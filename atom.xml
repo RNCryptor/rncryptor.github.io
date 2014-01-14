@@ -4,7 +4,7 @@
   <title><![CDATA[RNCryptor]]></title>
   <link href="http://RNCryptor.github.io/atom.xml" rel="self"/>
   <link href="http://RNCryptor.github.io/"/>
-  <updated>2014-01-14T09:21:47-05:00</updated>
+  <updated>2014-01-14T16:18:05-05:00</updated>
   <id>http://RNCryptor.github.io/</id>
   <author>
     <name><![CDATA[Rob Napier]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[New RNCryptor Site]]></title>
+    <link href="http://RNCryptor.github.io/blog/2014/01/14/new-rncryptor-site/"/>
+    <updated>2014-01-14T15:28:53-05:00</updated>
+    <id>http://RNCryptor.github.io/blog/2014/01/14/new-rncryptor-site</id>
+    <content type="html"><![CDATA[<p>RNCryptor has a new home of sorts. It now lives it its own organization, and I&rsquo;ve split all the implementations into their own repositories. There&rsquo;s a new <a href="https://github.com/RNCryptor/RNCryptor-Spec">RNCryptor-Spec</a> repository to track the specification itself. And there&rsquo;s this nice, new website to make things a little easier to find. I hope it helps you find what you need. I expect a lot of work on RNCryptor in 2014.</p>
+]]></content>
+  </entry>
   
 </feed>
