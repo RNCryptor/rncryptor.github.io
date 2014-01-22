@@ -4,7 +4,7 @@
   <title><![CDATA[RNCryptor]]></title>
   <link href="http://RNCryptor.github.io/atom.xml" rel="self"/>
   <link href="http://RNCryptor.github.io/"/>
-  <updated>2014-01-21T11:07:14-05:00</updated>
+  <updated>2014-01-21T22:07:21-05:00</updated>
   <id>http://RNCryptor.github.io/</id>
   <author>
     <name><![CDATA[Rob Napier]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Draft v3.1 and v4.0 Specs for Comment]]></title>
+    <link href="http://RNCryptor.github.io/blog/2014/01/21/draft-v3-dot-1-and-v4-dot-0-specs-for-comment/"/>
+    <updated>2014-01-21T20:52:22-05:00</updated>
+    <id>http://RNCryptor.github.io/blog/2014/01/21/draft-v3-dot-1-and-v4-dot-0-specs-for-comment</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve published draft specs for the next two versions of the RNCryptor format. I split it into two versions because the v3.1 changes are backward compatible while the v4.0 changes are not. Updating the ObjC implementation to v4.0 may take a little while, because I plan to also update the API at the same time. I can probably get a new version that handles v3.1 pretty quickly.</p>
+
+<p>Comments on these drafts are highly encouraged.</p>
+
+<p><a href="https://github.com/RNCryptor/RNCryptor-Spec/blob/master/draft-RNCryptor-Spec-v3.1.md">v3.1</a> allows you to configure PBKDF2 rounds in orders of magnitude from 10<sup>1</sup> (10) through 10<sup>7</sup> (1,000,000). This should address the many ad hoc implementations that people have used to support JavaScript. It will also allow me to finish <a href="https://github.com/RNCryptor/rncryptor-js">rncryptor-js</a>, which could not be implemented in a compatible way without support in the format for lower iteration counts. v3.1 is completely backward compatible with v3.0.</p>
+
+<p><a href="https://github.com/RNCryptor/RNCryptor-Spec/blob/master/draft-RNCryptor-Spec-v4.0.md">v4.0</a> is a more radical change to the format. Rather than randomly generating the IV, encryption key, and HMAC key, it derives these from a single master key and a random salt using a KDF. For key-based encryption, this is <a href="https://tools.ietf.org/html/rfc5869">HKDF</a>. For password-based encryption, this is PBKDF2 and HKDF. It also adds a validator that can be used to quickly verify that the key/password is correct before processing the entire file (this also differentiates between incorrect password and most corruption errors; previously the caller could not differentiate these error conditions).</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Why Not Scrypt?]]></title>
