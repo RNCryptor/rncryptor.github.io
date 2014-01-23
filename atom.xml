@@ -4,7 +4,7 @@
   <title><![CDATA[RNCryptor]]></title>
   <link href="http://RNCryptor.github.io/atom.xml" rel="self"/>
   <link href="http://RNCryptor.github.io/"/>
-  <updated>2014-01-21T22:08:05-05:00</updated>
+  <updated>2014-01-23T14:48:08-05:00</updated>
   <id>http://RNCryptor.github.io/</id>
   <author>
     <name><![CDATA[Rob Napier]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[New Implementations: C++ and C#]]></title>
+    <link href="http://RNCryptor.github.io/blog/2014/01/23/new-implementations-c-plus-plus-and-c-number/"/>
+    <updated>2014-01-23T14:34:46-05:00</updated>
+    <id>http://RNCryptor.github.io/blog/2014/01/23/new-implementations-c-plus-plus-and-c-number</id>
+    <content type="html"><![CDATA[<p>Thanks to <a href="https://github.com/curtisdf">Curtis Farnham</a>, we now have basic implementations of RNCryptor in <a href="https://github.com/RNCryptor/RNCryptor-cpp">C++</a> and <a href="https://github.com/RNCryptor/RNCryptor-cs">C#</a>.</p>
+
+<p>Neither Curtis nor I claim to be expert in C++ or C#. The C# implementation was developed in Mono, not .NET. If you&rsquo;re a C++ or C# developer, we would love input and pull requests to improve these implementations.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Draft v3.1 and v4.0 Specs for Comment]]></title>
